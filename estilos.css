@@ -28,6 +28,7 @@ url('https://googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display
             background: var(--negro);
             color: #8401fe;}
             html{
+             
             font-size: 62.4%;
             overflow-x: hidden;}
             body{background: #dcdcdcd4;}
@@ -98,6 +99,32 @@ url('https://googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display
                 background: url(./img/cell.avif);
                 background-size: cover;
                 background-position: center;}
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;  /* apila imagen, texto y botón */
+    text-align: center;      /* centra todo el contenido */
+  }
+
+  .inicio .content {
+    display: flex;
+    flex-direction: column;  /* para que el texto y botón se apilen */
+    align-items: center;     /* centra horizontalmente */
+    gap: 1rem;               /* espacio entre h3, p y botón */
+  }
+
+  .inicio .content .btn {
+    margin: 1rem auto;       /* centra el botón */
+  }
+
+  .inicio .image img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
 
     
             .inicio .image img{
@@ -141,8 +168,11 @@ url('https://googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display
 
                 }
                 .detalles .caja-contenedor .caja img{
-                    height: 20rem;
+                    
                     border-radius: 1rem;
+                    object-fit: contain;
+                    width: 100%;
+                    height: 200px;
                     
                 }
                 .detalles .caja-contenedor .caja h3{
@@ -169,8 +199,10 @@ url('https://googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display
                 }
                 .acerca_de .heading{
                     color: white;
+                        font-family: 'MiFuente', sans-serif;
+    color: white; /* o el color que quieras */
                     animation: parpadear 1s infinite backwards;
-                    text-shadow: 0 0 15px blueviolet, 0 0 30px blueviolet, 0 0 50px blueviolet;
+
                     @keyframes parpadear {
                         to{
                             color: blueviolet;
@@ -593,4 +625,47 @@ url('https://googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display
     font-family: 'MiFuente', sans-serif;
     color: white; /* o el color que quieras */
 
+}
+.navbar a:hover {
+  background: rgba(138, 43, 226, 0.1); /* un violeta transparente bonito */
+}
+.stars i {
+  color: #6602c4 !important; /* amarillo dorado */
+}
+.fa-check-circle {
+  color: #4CAF50; /* verde */
+  margin-left: 5px; /* separa un poquito del texto */
+  font-size: 16px;
+}
+.info i {
+  color: #000 !important; /* negro */
+  font-size: 18px; /* opcional: ajusta el tamaño */
+  margin-right: 8px; /* opcional: espacio entre icono y texto */
+}
+@media (max-width: 768px) {
+    .contactos {
+        flex-direction: column;  /* Imagen arriba, formulario abajo */
+        text-align: center;
+    }
+
+    .contactos .image {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactos .image img {
+        width: 90%;   /* para que no quede pegada a los bordes */
+        padding: 1rem;
+    }
+
+    .contactos form {
+        flex: 1 1 100%;
+        margin-top: 2rem; /* separa el formulario de la imagen */
+    }
+        .contactos form {
+        flex: 1 1 100%;   /* ocupa todo el ancho disponible */
+        width: 90%;       /* mismo ancho que la imagen */
+        margin: 2rem auto; 
+    }
 }

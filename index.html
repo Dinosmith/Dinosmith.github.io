@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="img/11.png">
     <link rel="stylesheet" href="https://cloudfflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -29,6 +30,18 @@
             <a href="#Opiniones">Opiniones</a>
             <a href="#Precios">Precios</a>
             <a href="#Contactos">Contactos</a>
+            <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
             
         </nav>
     </header>
@@ -45,7 +58,7 @@
 
 
             <center><marquee behavior="scroll" direction="right" scrollamount="50"crolldelay="2" width="100%"> <font color="white">___________________________________________________________________</font></marquee></center>
-            <a href="#" class="btn">ᴍᴀꜱ   ᴅᴇᴛᴀʟʟᴇꜱ </a>
+            <a href="https://www.facebook.com/dino.smithv" class="btn">ᴍᴀꜱ   ᴅᴇᴛᴀʟʟᴇꜱ </a>
         </div>
         <div class="image">
             
@@ -76,21 +89,29 @@
     }
   });
 </script>
-         
+
         </div>
 </section>
 <section class="detalles" id="Detalles">
-    <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="black">_____________________________________________</font></marquee></center>
     <h1 class="heading">PRODUCTOS</h1>
+                 <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="black">_____________________________________________</font></marquee></center>
+
     <div class="caja-contenedor">
         <div class="caja">
-            <img src="img/redmi 14.webp" alt="">
+            <img src="img/LOGO XIAOMI.png" alt="">
             <P>Celulares</P>
             <h3>XIAOMI</h3>
                 <a href="#" class="btn">VER MODELOS</a>
         </div>
+                <div class="caja">
+            <img src="img/LOGO REDMI BY XIOMI.webp" alt="">
+            <P>Celulares</P>
+            <h3>REDMI</h3>
+
+               <a href="#" class="btn">VER MODELOS</a>
+        </div>
         <div class="caja">
-            <img src="img/SAMSUNG 25.webp" alt="">
+            <img src="img/LOGO SAMSUNG 2.png" alt="">
             <P>Celulares</P>
             <h3>SAMSUMG</h3>
         
@@ -98,7 +119,7 @@
 
         </div>
         <div class="caja">
-            <img src="img/SAMSUNG 25.webp" alt="">
+            <img src="img/LOGO HUAWEI.png" alt="">
             <P>Celulares</P>
             <h3>HUAWEI</h3>
          
@@ -106,23 +127,30 @@
 
         </div>
         <div class="caja">
-            <img src="img/SAMSUNG 25.webp" alt="">
+            <img src="img/LOGO REALME.jpg" alt="">
             <P>Celulares</P>
             <h3>REALME</h3>
            
                <a href="#" class="btn">VER MODELOS</a>
         </div>
         <div class="caja">
-            <img src="img/SAMSUNG 25.webp" alt="">
+            <img src="img/LOGO MOTOROLA 2.png" alt="">
             <P>Celulares</P>
             <h3>MOTOROLA</h3>
             
                <a href="#" class="btn">VER MODELOS</a>
         </div>
         <div class="caja">
-            <img src="img/SAMSUNG 25.webp" alt="">
+            <img src="img/LOGO INFINIX 2.png" alt="">
             <P>Celulares</P>
             <h3>INFINIX</h3>
+
+               <a href="#" class="btn">VER MODELOS</a>
+        </div>
+                <div class="caja">
+            <img src="img/LOGO TECNO.png" alt="">
+            <P>Celulares</P>
+            <h3>TECNO</h3>
 
                <a href="#" class="btn">VER MODELOS</a>
         </div>
@@ -130,20 +158,20 @@
     </div>
 </section>
 <section class="acerca_de" id="Acerca_de">
-    <h1 class="heading">DSV STORE</h1>
+    <h1 class="heading">DSV XD</h1>
     <div class="columna">
     <div class="image">
         <img src="img/19.png" alt="">
     </div>
     <div class="content">
-<H3>"Pícalo, tócala, desliza: tu nuevo cel está aquí."</H3>
+<H3>Tu nuevo cel está aquí.</H3>
         <p>Somos una empresa dedicada a la venta de celulares de las mejores marcas del mercado. Ofrecemos equipos originales, con garantía y al mejor precio, buscando siempre brindarte tecnología de calidad y un servicio confiable.</p>
           
             <div class="bottons">
                 <a href="#" class="btn"><i class="fa-brands fa-google-play"></i>
-                GOOGLE PLAY</a>
+                Google play </a>
                 <a href="#" class="btn"><i class="fa-brands fa-apple"></i>
-                APPLE STORE </a>
+                Apple store  </a>
                 
             </div>
     </div>
@@ -153,7 +181,7 @@
     <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="greenblueblue">_____________________________________________</font></marquee></center>
     <h3>SUSCRIBETE PARA TENER MAS NOVEDADES</h3>
     <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="greenblueblue">_____________________________________________</font></marquee></center>
-    <p>Encuentra promociones y descuentos exclusivos</p>
+    <p>Encuentran promociones y descuentos exclusivos</p>
     <form action="">
         <input type="email" placeholder="ingresa tu email">
         <input type="submit" value="suscribete">
@@ -164,29 +192,28 @@
     <h1 class="heading">Opiniones de clientes</h1>
     <div class="caja-contenedor">
         <div class="caja">
-            <i class="fas fa-atom"></i>
+            <i class="fas fa-user-circle"></i>
             <div class="user">
                 <img src="img/9.jpg" alt="">
-                <h3>Pedro</h3>
+                <h3>Pedro<i class="fas fa-check-circle"></i></h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
 
                 </div>
-                <div class="comentarios">buen producto llego
-                    en buen estado
+                <div class="comentarios">Llego al tiempo establecido!
                 </div>
             </div>
         </div>
 
         <div class="caja">
-            <i class="fas fa-atom"></i>
+            <i class="fas fa-user-circle"></i>
             <div class="user">
                 <img src="img/27.jpg" alt="">
-                <h3>Cleo</h3>
+                <h3>Cleo<i class="fas fa-check-circle"></i></h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -202,10 +229,10 @@
         </div>
 
         <div class="caja">
-            <i class="fas fa-atom"></i>
+            <i class="fas fa-user-circle"></i>
             <div class="user">
                 <img src="img/TEAM LEGEND 20.png" alt="">
-                <h3>Yami</h3>
+                <h3>Yami<i class="fas fa-check-circle"></i></h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -219,12 +246,29 @@
                 </div>
             </div>
         </div>
-        
         <div class="caja">
-            <i class="fas fa-atom"></i>
+    <i class="fas fa-user-circle"></i>
+    <div class="user">
+        <img src="img/10.jpg" alt="">
+        <h3>Angy <i class="fas fa-check-circle"></i></h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+            
+        </div>
+        <div class="comentarios">
+            Buen producto llegó en buen estado
+        </div>
+    </div>
+</div>
+        <div class="caja">
+            <i class="fas fa-user-circle"></i>
             <div class="user">
-                <img src="img/10.jpg" alt="">
-                <h3>angy</h3>
+                <img src="img/jorgito.jpg" alt="">
+                <h3>Jorgito el curiosito<i class="fas fa-check-circle"></i></h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -232,8 +276,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <div class="comentarios">Buen producto llego
-                    en buen estado
+                <div class="comentarios">Todo ok, recomendadisimo!
                 </div>
             </div>
         </div>
@@ -243,12 +286,11 @@
                 <img src="img/11.png" alt="">
                 <h3>Rafael</h3>
                 <div class="stars">
-                    <i class=fas fa-star></i>
-                    <i class=fas fa-star></i>
-                    <i class=fas fa-star></i>
-                    <i class=fas fa-star></i>
-                    <i class=fas fa-star></i>
-
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
                 <div class="comentarios">Buen producto llego
                     en buen estado
@@ -378,11 +420,17 @@
     </div>
     <div class="caja">
         <h3> buscanos en</h3>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twiter</a>
-        <a href="#">Tiktok</a>
-        <a href="#">Wadpat</a>
+          <a href="https://www.facebook.com/dino.smithv" target="_blank">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
+        <a href="https://www.instagram.com/dino.smithv/profilecard/?igsh=M3A3em5ucDQ4Z2hk" target="-blank"> <i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://www.tiktok.com/@dinno.zz?_t=ZT-8yxR18vO2hC&_r=1" target="_blank">
+    <i class="fab fa-tiktok"></i> TikTok
+  </a>
+
+  <a href="https://www.wattpad.com/" target="_blank">
+    <i class="fas fa-book-open"></i> Wattpad
+  </a>
     </div>
     <div class="caja">
         <h3>Informacion</h3>
@@ -392,12 +440,12 @@
         </div>
         <div class="info">
             <i class="fas fa-envelope"></i>
-            <p>jorgitoelcuriosito@gmail.com <br> pingolines@gmail.com</p>
+            <p>jcollatupapilco@gmail.com <br> dinocv@gmail.com</p>
         </div>
 
         <div class="info">
-            <i class="fas fa-map-market-alt"></i>
-            <p>Juli Peru <br> 521 av. tu corazon</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Juli Peru <br> 521 av. Alfonso Ugarte</p>
         </div>
     </div>
 
