@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSV STORE</title>
+    <link rel="icon" type="image/png" href="img/11.png">
+    <link rel="stylesheet" href="https://cloudfflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    
+       
+    
+        <script src="https://cdnjs.cloudflre.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    <header>
+<a href="#" class="logo" style="font-weight: bold;">
+    <span>DSV   </span> STORE </a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+             
+            <a href="#Inicio">Inicio</a>
+            <a href="#Detalles">Detalles</a>
+            <a href="#Acerca_de">Acerca de</a>
+            <a href="#Opiniones">Opiniones</a>
+            <a href="#Precios">Precios</a>
+            <a href="#Contactos">Contactos</a>
+            
+        </nav>
+    </header>
+    <section class="inicio" id="Inicio">
+        <div class="content">
+            <marquee behavior="alternate" scrollamount="19">
+                <strong><div><span style="color: #ff16b9;"></span><span style="color: #000;"></span><span style="color: #ff1616;"></span><span style="color: #d5696c;"></span><span style="color: #000;"></span>
+                    </marquee>
+            <h3>DSV xd<span></span></h3>
+            <p>Venta de Celulares y accesorios Tecnologicos</p>
+            <center><marquee behavior="scroll" direction="right" scrollamount="50"crolldelay="10"with="100%"> <font color="white">___________________________________________________________________</font></marquee></center>
+            
+           
+
+
+            <center><marquee behavior="scroll" direction="right" scrollamount="50"crolldelay="2" width="100%"> <font color="white">___________________________________________________________________</font></marquee></center>
+            <a href="#" class="btn">ᴍᴀꜱ   ᴅᴇᴛᴀʟʟᴇꜱ </a>
+        </div>
+        <div class="image">
+            
+         <img src="img/dsv 6.png" alt="">
+         <body onclick="playAudio()" style="cursor:pointer;">
+  <audio id="bgAudio" src="audio/Música De Fondo Para Videos Y Presentaciones Corporativas I Deeper por e-soundtrax.mp3" loop></audio>
+  <script>
+    function playAudio() {
+      const a = document.getElementById('bgAudio');
+      a.play().catch(e => console.error(e));
+      document.body.removeAttribute('onclick');
+    }
+    
+  </script>
+  <button id="pauseBtn">⏸</button>
+  
+  <script>
+  const audio = document.getElementById("bgAudio");
+  const btn = document.getElementById("pauseBtn");
+
+  btn.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      btn.textContent = "⏸"; // cambia a pausa
+    } else {
+      audio.pause();
+      btn.textContent = "▶"; // cambia a play
+    }
+  });
+</script>
+         
+        </div>
+</section>
+<section class="detalles" id="Detalles">
+    <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="black">_____________________________________________</font></marquee></center>
+    <h1 class="heading">PRODUCTOS</h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <img src="img/redmi 14.webp" alt="">
+            <P>Celulares</P>
+            <h3>XIAOMI</h3>
+                <a href="#" class="btn">VER MODELOS</a>
+        </div>
+        <div class="caja">
+            <img src="img/SAMSUNG 25.webp" alt="">
+            <P>Celulares</P>
+            <h3>SAMSUMG</h3>
+        
+                <a href="#" class="btn">VER MODELOS</a>
+
+        </div>
+        <div class="caja">
+            <img src="img/SAMSUNG 25.webp" alt="">
+            <P>Celulares</P>
+            <h3>HUAWEI</h3>
+         
+                <a href="#" class="btn">VER MODELOS</a>
+
+        </div>
+        <div class="caja">
+            <img src="img/SAMSUNG 25.webp" alt="">
+            <P>Celulares</P>
+            <h3>REALME</h3>
+           
+               <a href="#" class="btn">VER MODELOS</a>
+        </div>
+        <div class="caja">
+            <img src="img/SAMSUNG 25.webp" alt="">
+            <P>Celulares</P>
+            <h3>MOTOROLA</h3>
+            
+               <a href="#" class="btn">VER MODELOS</a>
+        </div>
+        <div class="caja">
+            <img src="img/SAMSUNG 25.webp" alt="">
+            <P>Celulares</P>
+            <h3>INFINIX</h3>
+
+               <a href="#" class="btn">VER MODELOS</a>
+        </div>
+
+    </div>
+</section>
+<section class="acerca_de" id="Acerca_de">
+    <h1 class="heading">DSV STORE</h1>
+    <div class="columna">
+    <div class="image">
+        <img src="img/19.png" alt="">
+    </div>
+    <div class="content">
+<H3>"Pícalo, tócala, desliza: tu nuevo cel está aquí."</H3>
+        <p>Somos una empresa dedicada a la venta de celulares de las mejores marcas del mercado. Ofrecemos equipos originales, con garantía y al mejor precio, buscando siempre brindarte tecnología de calidad y un servicio confiable.</p>
+          
+            <div class="bottons">
+                <a href="#" class="btn"><i class="fa-brands fa-google-play"></i>
+                GOOGLE PLAY</a>
+                <a href="#" class="btn"><i class="fa-brands fa-apple"></i>
+                APPLE STORE </a>
+                
+            </div>
+    </div>
+    </div>
+</section>
+<div class="suscribete">
+    <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="greenblueblue">_____________________________________________</font></marquee></center>
+    <h3>SUSCRIBETE PARA TENER MAS NOVEDADES</h3>
+    <center><marquee behavior="scroll" direction="right" scrollamount="107" scrolldelay="3" width="100%"> <font color="greenblueblue">_____________________________________________</font></marquee></center>
+    <p>Encuentra promociones y descuentos exclusivos</p>
+    <form action="">
+        <input type="email" placeholder="ingresa tu email">
+        <input type="submit" value="suscribete">
+
+    </form>
+</div>
+<section class="opiniones" id="Opiniones">
+    <h1 class="heading">Opiniones de clientes</h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <i class="fas fa-atom"></i>
+            <div class="user">
+                <img src="img/9.jpg" alt="">
+                <h3>Pedro</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <div class="comentarios">buen producto llego
+                    en buen estado
+                </div>
+            </div>
+        </div>
+
+        <div class="caja">
+            <i class="fas fa-atom"></i>
+            <div class="user">
+                <img src="img/27.jpg" alt="">
+                <h3>Cleo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <div class="comentarios">buen producto llego
+                    en buen estado
+                </div>
+            </div>
+        </div>
+
+        <div class="caja">
+            <i class="fas fa-atom"></i>
+            <div class="user">
+                <img src="img/TEAM LEGEND 20.png" alt="">
+                <h3>Yami</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+                <div class="comentarios">buen producto llego
+                    en buen estado
+                </div>
+            </div>
+        </div>
+        
+        <div class="caja">
+            <i class="fas fa-atom"></i>
+            <div class="user">
+                <img src="img/10.jpg" alt="">
+                <h3>angy</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comentarios">Buen producto llego
+                    en buen estado
+                </div>
+            </div>
+        </div>
+        <div class="caja">
+            <i class="fas fa-atom"></i>
+            <div class="user">
+                <img src="img/11.png" alt="">
+                <h3>Rafael</h3>
+                <div class="stars">
+                    <i class=fas fa-star></i>
+                    <i class=fas fa-star></i>
+                    <i class=fas fa-star></i>
+                    <i class=fas fa-star></i>
+                    <i class=fas fa-star></i>
+
+                </div>
+                <div class="comentarios">Buen producto llego
+                    en buen estado
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="precios" id="Precios">
+    <h1 class="heading">¡OFERTA SOLO PARA TI!</h1>
+    <div class="caja-contenedor">
+
+        <div class="caja">
+            <h3 class="titulo">REDMI NOTE 14 PRO PLUS</h3>
+            <img src="img/redmi 14.webp" width="90%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>
+        <div class="caja">
+            <h3 class="titulo">MOTOROLA EDGE 50</h3>
+            <img src="img/EDGE 50.png" width="71%">
+        <div class="antiguo"><span>Regular s/.3,199</span></div> 
+            <div class="tipos">
+            S/.3,099
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        <div class="caja">
+            <h3 class="titulo">HUAWEI P50 PRO</h3>
+            <img src="img/HUAWEI P50 PRO.jpg" width="99%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        <div class="caja">
+            <h3 class="titulo">INFINIX GT 20 PRO</h3>
+            <img src="img/INFINIX GT 20.jpg" width="100%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        <div class="caja">
+            <h3 class="titulo">SAMSUNG S24 ULTRA</h3>
+            <img src="img/SAMSUNG 25.webp" width="100%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        <div class="caja">
+            <h3 class="titulo">REALME GT5 PRO</h3>
+            <img src="img/REALME GT5 PRO.webp" width="82%">
+        <div class="antiguo"><span>Regular s/.2,000</span></div> 
+            <div class="tipos">
+            S/.1,990
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        <div class="caja">
+            <h3 class="titulo">REDMI NOTE 14 PRO PLUS</h3>
+            <img src="img/redmi 14.webp" width="90%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>        
+        <div class="caja">
+            <h3 class="titulo">REDMI NOTE 14 PRO PLUS</h3>
+            <img src="img/redmi 14.webp" width="90%">
+        <div class="antiguo"><span>Regular s/.1,200</span></div> 
+            <div class="tipos">
+            S/.999
+            </div>
+
+            <a href="#" class="btn">COMPRAR AHORA</a>
+        </div>
+              
+
+        
+    </div>
+</section>
+<section class="contactos" id="Contactos">
+<div class="image">
+    <img src="img/DSV 4.jpg" alt="">
+
+</div>
+<form action="">
+    <h1 class="heading">Contactos</h1>
+    <div class="inputcaja">
+        <input type="text" required>
+        <label for="">nombre</label>
+
+    </div>
+    <div class="inputcaja">
+        <input type="email" required>
+        <label for="">email</label>
+    </div>
+    <div class="inputcaja">
+        <input type="number" required>
+        <label for="">celular</label>
+
+    </div>
+    <div class="inputcaja">
+        <textarea required name="" id="" cols="30" rows="10"></textarea>
+        <label for="">mensaje</label>
+    </div>
+    <input type="submit" class="btn" value="ENVIAR">
+</form>
+</section>
+<div class="footer">
+    <div class="caja-contenedor">
+        <div class="caja">
+        <h3>Novedades e informacion</h3>
+        <p>siguenos en nuestras redes sociales</p>
+
+    </div>
+    <div class="caja">
+        <h3> buscanos en</h3>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twiter</a>
+        <a href="#">Tiktok</a>
+        <a href="#">Wadpat</a>
+    </div>
+    <div class="caja">
+        <h3>Informacion</h3>
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <p>900-999-809 <br> 973-645-188</p>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <p>jorgitoelcuriosito@gmail.com <br> pingolines@gmail.com</p>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-map-market-alt"></i>
+            <p>Juli Peru <br> 521 av. tu corazon</p>
+        </div>
+    </div>
+
+   </div>
+    <h1 class="creditos">
+    &copy, copyringht by: los jorges @ 2025 JCC
+</h1>
+</div>
+</body>
+</html>
+</html>
